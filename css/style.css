@@ -1,0 +1,246 @@
+/*
+,*:before ,*:after {
+  border: 1px solid red;
+}
+*/
+
+* {
+  font-family: "Gentium Book Basic", serif;
+  font-weight: 400;
+}
+
+body {
+  width: 99%;
+  margin: 0 auto;
+}
+
+section {
+    margin: 50px;
+}
+
+.inline-block {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/*.logo {
+    width: 22%;
+    padding: 1%;
+    text-align: center;
+    float: right;
+}
+*/
+
+
+nav {
+  margin-left: 50px;
+
+}
+
+.navigation {
+  padding-left: 0px;
+}
+
+.navbar {
+  margin-right: 50px;
+  
+}
+
+.hideButton {
+    display: ;
+}
+
+.parentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: auto;
+  margin: 0 auto;
+}
+
+.flexChild {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+h1 {
+  font-size: 80pt;
+  margin: 0px;
+  padding: 0px;
+}
+
+h2 {
+    font-size: 25pt;
+}
+
+h3 {
+    font-size: 18pt;
+}
+
+#nameHeader {
+  font-weight: 700;
+}
+
+#nameHeader:hover {
+  background-color: #e1b100;
+  color: #ffffff;
+}
+
+#infome {
+  width: auto;
+}
+
+#knowme {
+  width: 100px;
+  height: 60px;
+}
+
+#heroImg {
+  display: flex;
+  flex-direction: column;
+  width: 88%;
+  margin: 0 auto;
+  margin-bottom: 10%;
+}
+
+#bottom {
+  display: flex;
+  flex-direction: column;
+  width: 88%;
+  margin: 0 auto;
+  margin-bottom: 5%;
+}
+
+#card1 {grid-area: card1;}
+#card2 {grid-area: card2;}
+
+.workimg {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: 
+  "card1 card2"
+  ;
+}
+
+.card {
+  width: 100%;
+}
+
+.workbutton {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+#infowork {
+  width: 100px;
+}
+
+footer {
+  background-color: #ffffff;
+}
+
+#icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 25px;
+}
+
+.parentFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+
+/*   CSSaboutMe   */
+
+.aboutMe {
+    height: auto;
+}
+
+#myPortrait {
+    float: right;
+    height: 700px;
+   
+}
+
+.whoArea {grid-area: whoArea;}
+.whatArea {grid-area: whatArea;}
+.whyArea {grid-area: whyArea;}
+
+.infoGrid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "whoArea"
+    "whatArea"
+    "whyArea"
+    ;
+}
+
+
+
+/*   CSSwork   */
+
+.skillsContainer {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+
+.skills {
+    width: 50%;
+}
+
+.workCard {
+    border: 1px solid #000000;
+    margin: 25px;
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#workImage {
+    width: 100px;
+    float: right;
+}
+
+#work1 {
+    grid-area: work1
+}
+#work2 {
+    grid-area: work2
+}
+
+#bottom-work {
+    border: 1px solid #000000;
+    padding: 25px;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "work1"
+    "work2"
+    ;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .workimg {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "card1"
+        "card2"
+        ;
+      }
+
+}
