@@ -1,8 +1,8 @@
-/*
-,*:before ,*:after {
+
+*:before, *:after {
   border: 1px solid red;
 }
-*/
+
 
 * {
   font-family: "Gentium Book Basic", serif;
@@ -10,18 +10,16 @@
 }
 
 body {
-  width: 99%;
+  width: 90%;
   margin: 0 auto;
+  padding: 20px;
 }
 
 section {
     margin: 50px;
 }
 
-.inline-block {
-  display: inline-block;
-  vertical-align: middle;
-}
+
 
 /*.logo {
     width: 22%;
@@ -33,37 +31,74 @@ section {
 
 
 nav {
-  margin-left: 50px;
+  width: 50px;
+  margin-left: 7%;
+  z-index: 1px;
+  position: absolute;
 
-}
-
-.navigation {
-  padding-left: 0px;
-}
-
-.navbar {
-  margin-right: 50px;
   
 }
 
+.menu {
+  cursor: pointer;
+  padding: 15px;
+  
+}
+
+#logo {
+  width: 100%;
+}
+
+.menuContainer {
+  width: 75px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.navbar {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: none;
+
+}
+
 .hideButton {
-    display: ;
+    margin: 0;
+    padding: 15px;
+    border: 1px solid black;
+    
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
 }
 
 .parentContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: auto;
   margin: 0 auto;
 }
 
 .flexChild {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
+  padding-bottom: 0;
+  align-items: flex-end;
+  justify-content: space-around;
+  width: 500px;
+  
+}
+
+#infome {
+  font-size: 15pt;
+  line-height: 1.2;
+}
+
+
+#arrowNext {
+  position: relative;
+  bottom: 20px;
+  width: 36px;
 }
 
 h1 {
@@ -89,14 +124,7 @@ h3 {
   color: #ffffff;
 }
 
-#infome {
-  width: auto;
-}
 
-#knowme {
-  width: 100px;
-  height: 60px;
-}
 
 #heroImg {
   display: flex;
@@ -104,40 +132,25 @@ h3 {
   width: 88%;
   margin: 0 auto;
   margin-bottom: 10%;
+  margin-top: 200px;
 }
 
 #bottom {
-  display: flex;
-  flex-direction: column;
   width: 88%;
   margin: 0 auto;
-  margin-bottom: 5%;
+  margin-bottom: 100px;
 }
 
-#card1 {grid-area: card1;}
-#card2 {grid-area: card2;}
-
 .workimg {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-areas: 
-  "card1 card2"
-  ;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .card {
-  width: 100%;
+  width: 500px;
 }
 
-.workbutton {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-
-#infowork {
-  width: 100px;
-}
 
 footer {
   background-color: #ffffff;
@@ -154,6 +167,7 @@ footer {
   flex-direction: row;
   justify-content: flex-start;
   padding: 20px;
+  margin-left: 7%;
 }
 
 

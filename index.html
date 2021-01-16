@@ -3,19 +3,21 @@
   <head>
     <link href="css/style.css" type="text/css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <title>Martin Carpio</title>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LL9E0EQHDP"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-LL9E0EQHDP');
-</script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LL9E0EQHDP"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-LL9E0EQHDP');
+    </script>
     <!-- Hotjar Tracking Code for https://mmmartn.github.io/UX_UI_HW_19/ -->
-<script>
+    <script>
     (function(h,o,t,j,a,r){
         h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
         h._hjSettings={hjid:2153582,hjsv:6};
@@ -26,15 +28,21 @@
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
   </head>
+  
   <body>
     <header>
-      <nav class="inline-block">
-        <ul class="navigation">
-          <li class="inline-block navbar menu"><button>Menu</button></li>
-          <li class="inline-block navbar hideButton"><a href="/index.html">Home</a></li>
-          <li class="inline-block navbar hideButton"><a href="/work.html">Work</a></li>
-          <li class="inline-block navbar hideButton"><a href="/aboutme.html">About</a></li>
-        </ul>
+      <nav class=>
+          <div class="menuContainer">
+
+          <div class="menu"><img id="logo" src="/images/mcLogo.png"></div>
+          <ul class="navbar">
+          <li class=" hideButton"><a href="/index.html">HOME</a></li>
+          <li class=" hideButton"><a href="/work.html">WORK</a></li>
+          <li class=" hideButton"><a href="/aboutme.html">ABOUT</a></li>
+          </ul>
+
+          </div>
+
       </nav>
     </header>
 
@@ -49,19 +57,17 @@
             others through good design, always <br />looking to solve problems
             with a fresh perspective.
           </p>
-          <button id="knowme">Get to know me!</button>
+          <a href="/aboutme.html"><img src="images/down-right-24.png" id="arrowNext" /></a>
         </div>
       </div>
     </section>
 
     <section id="bottom">
       <div class="workimg">
-        <img class= "card" id="card1" src="images/coral-card.png" />
-        <img class= "card" id="card2" src="images/mhm-card.png" />
+        <img class= "card" id="card1" src="images/coralCard.png" />
+        <img class= "card" id="card2" src="images/mhmCard.png" />
       </div>
-      <div class="workbutton">
-        <button id="infowork">Check out more work!</button>
-      </div>
+
     </section>
 
     <footer>
@@ -73,4 +79,5 @@
       </div>
     </footer>
   </body>
+  <script src="js/index.js"></script>
 </html>
